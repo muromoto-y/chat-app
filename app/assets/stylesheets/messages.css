@@ -1,42 +1,72 @@
 .wrapper {
   display: flex;
 }
-
 .side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
-  background-color: #253141;
 }
 
-.chat {
-  width: calc(100% - 300px);
-  background-color: #ffffff;
-}
-
-.side-bar-header{
+.side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.room{
+.header-name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.chat-room{
+  font-size: 10px;
+}
+
+.chat-room a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.rooms {
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
-.chat-header{
+.room{
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.chat {
+  background-color: #ffffff;
+  width: calc(100% - 300px);
+}
+
+.chat-header {
   height: 100px;
   padding: 0 40px;
 }
 
-.message{
+.messages {
+  background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
-  background-color: #fafafa;
   padding: 46px 40px 0;
 }
 
-.form{
+.form {
+  background-color: #DDDDDD;
   height: 90px;
-  background-color: #dddddd;
   padding: 20px 40px;
 }
